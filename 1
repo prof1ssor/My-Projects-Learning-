@@ -1,0 +1,375 @@
+# 1
+# num = int(input("what is yout number:"))
+# if (num < 0) :
+#     print("good")
+# elif (num == 0) :
+#     print("vgood")
+# elif (num < 93399) :
+#     print("bad")
+# else:
+#   print("end")
+#
+# 2
+# time = int(input("what is the present time :"))
+# if (time < 12) :
+#     print("good morning")
+# elif (time < 16):
+#     print("good after noon")
+# elif (time < 24) :
+#     print("good night")
+# else :
+#     print ("next day")
+#
+# 3
+# x = int(input("enter the value of x":))
+# match x :
+#     case 0 :
+#     print("x is zero")
+#     case 4 :
+#         print("x is 4")
+#     case _:
+#         print(x)
+#
+# 4
+# for k in range(1, 12, 3):
+#  print(k)
+#
+# 5 
+# count = 99
+# while(count > 0):
+#     print(count)
+#     count = count - 1
+# else:
+#     print('end, bye bye lun')
+#
+# 6
+# for i in range(15):
+#     if(i == 11):
+#         print('hello')
+#         continue
+#     print("5 X ", i, "=", 5 * i)
+# print('end')
+#    
+#  7
+# i = 0
+# while True:
+#     print(i)
+#     i = i+1
+#     if(i%101 ==0):
+#         break
+#
+# 8
+# def mean(a,b):
+#     mean = (a*b)/(a+b)
+#     print(mean)
+# def num (a,b) :
+#     if (a > b):
+#         print('first number is greater')
+#     else:
+#         print('second number is gretaer')
+# a = 1
+# b = 3
+# num(a,b)
+# mean(a,b)
+#
+# c=5
+# num(c,b)
+# mean(c,b)
+#
+# 9
+# while (True):
+#     i = int(input('enter a number:'))
+#     print(i)
+#     if (i > 0):
+#         print('number is greater')
+#     else:
+#         print('number is 0')
+#
+# 10
+# while (True) :
+#  a = float(input('enter first number:'))
+#  print(a)
+#  b = float(input('enter second number:'))
+#  print(b)
+#  c = float(input('enter third number:'))
+#  print(c)
+#  if (c > 0.0) :
+#      def mean (a,b,c):
+#          mean = (a*b*c)/(a+b+c)
+#          print("your mean is" ,mean)
+#      def average(a,b,c):
+#          average = (a+b+c)/3
+#          print("your average is " , average)
+#      i = str(mean(a,b,c))
+#      j = str(average(a,b,c))
+#  else :
+#      def mean (a,b):
+#          mean = (a*b)/ (a+b)
+#          print("your mean is" ,mean)
+#      def average(a,b):
+#          average = (a+b)/2
+#          print("your average is " , average)
+#      i = str(mean(a,b))
+#      j = str(average(a,b))
+#  if (i > j):
+#      print("mean is greater than average")
+#  else :
+#      print("average is greater than your mean")
+#
+# 11
+# marks = [4,2,3,4,3,2,54,33,22,542,455,34,3,5565,34,45]
+# print(marks[7])
+# print(marks[0])
+# print(marks[5])
+# print(marks[9])
+# print(marks[1])
+# print(marks[6])
+# print(marks[4])
+# #counting alwys starts from 0
+#
+# 12
+# marks = [1,2,3,4,5,6]
+# print(marks[-3])
+# print(marks[len(marks)-3])
+# print(marks[6-3])
+# print(marks[3])
+# print(marks[0:]) # #here [0:] = [0: len(marks)]
+#
+# 13
+# mst = [i*i for i in range(8)]
+# lst = [i for i in range(8) if i%2==0]
+# print(lst)
+# print(mst)
+# print(lst[0])
+#
+# 14
+# tup = (1,2,3,4,5,6,7,8,9)
+# print(tup[0])
+# if 2 in tup :
+#     print("yes")
+#
+# 15
+# import time
+# t = time.strftime('%H:%M:%S')
+# print(t)
+# hour = int(time.strftime('%H'))
+# if(hour>=0 and hour <5):
+#     print("Good Night Sir")
+# elif(hour>=5 and hour <11):
+#     print("Good Morning Sir")
+# elif(hour>=11 and hour <17):
+#     print("Good Afternoon Sir")
+# elif(hour>=17 and hour <21):
+#     print("Good Evening Sir")
+# elif(hour>=21 and hour <24):
+#     print("Good Night Sir")
+#
+# 16
+# while (True):
+#  print('Question 1 - What is capable of India?')
+#  print('ANSWERS \n1. Delhi \n2. Mumbai \n3. Punjab \n4. Lahore')
+#  a = int(input('choose the Answer:'))
+#  if (a==1):
+#      print('You Won $10 Million')
+#  else :
+#      print('Fuck you retard, You Lost')
+#
+# 17
+# def square(n):
+#     '''takes in a number n, returns the square of n'''
+#     print(n**2)
+# square(5)
+# print(square.__doc__) #doc string is the """" and alwys use in the first line
+#
+# 18
+# s = {2,4,6,8} #set
+# print(s)
+#
+# info = {'calra', 19,False,5.9,19}
+# print(info)
+#
+# 19
+# numbers = {"vvb,aae,aab,aas,dds"}
+# numbers2 = {"abb,aab,aas,aad,aaf"}
+# citi = numbers.difference(numbers2)
+# print(citi)
+#
+# 20 (chatgpt)
+# print("Welcome to the adventure game!")
+
+# # Set up the player's initial stats
+# health = 10
+# coins = 5
+
+# # Start the game loop
+# while True:
+#   # Print the current status
+#   print(f"You have {health} health points and {coins} coins.")
+ 
+#   # Print the available actions
+#   print("What do you want to do?")
+#   print("(1) Explore the cave")
+#   print("(2) Visit the shop")
+#   print("(3) Quit the game")
+ 
+#   # Get the player's choice
+#   choice = input("> ")
+ 
+#   # Explore the cave
+#   if choice == "1":
+#     print("You enter the cave and find a treasure chest!")
+#     print("You open the chest and find a shiny coin inside.")
+#     coins += 1
+ 
+#   # Visit the shop
+#   elif choice == "2":
+#     print("You visit the shop and see a healing potion for sale.")
+#     if coins >= 3:
+#       print("You buy the potion and use it to heal your wounds.")
+#       health += 5
+#       coins -= 3
+#     else:
+#       print("You don't have enough coins to buy the potion.")
+ 
+#   # Quit the game
+#   elif choice == "3":
+#     print("Thanks for playing! Goodbye.")
+#     break
+ 
+#   # Invalid choice
+#   else:
+#     print("Invalid choice. Try again.")
+#
+# 21
+# dic = {
+#     344 : "harry" ,
+#     223 : "preet" ,
+#     111 : "Ghuggi" ,
+#     234 : "Honey"
+# }
+#
+# print(dic[344])
+#
+# 22
+# for i in range(6):
+#     print(i)
+#     if i == 4:
+#         break
+# else:
+#     print("sorry no i")
+#
+# 23 - Table
+# a = input("enter a number:")
+# print(f"Multiplication table of {a} is : ")
+# for i in range(1,11):
+#     print(f"{str(a)} X {i} = {int(a)*i}")
+#
+# 24 - Error Pass
+# while True :
+#  a = input("enter a number:")
+#  print(f"Multiplication table of {a} is : ")
+#  try:
+#      for i in range(1,11):
+#          print(f"{int(a)} X {i} = {int(a)*i}")
+#  except:
+#      print("Fuck off, You Cant even get the number rigth")
+#      print("End, Thank YOU")
+#
+# 25 - Error2
+# while True :
+#  try:
+#     num = int(input("Enter an integer:"))
+#     a = [6,3]
+#     print(a[num])
+#  except ValueError:
+#     print("Number is not an integer.")
+#  except IndexError:
+#     print("Index error.")
+#
+# 26 - Finally
+# while True :
+#  def func() :
+#      try :
+#          l = [1,2,3,4,5,6]
+#          i = int(input("enter a value:"))
+#          print(l[i])
+#          return 1
+#      except:
+#          print("pagal")
+#          return 0
+#      finally:
+#         print("Good Job")
+#  x = func()
+#  print(x)
+#
+#27
+# a = str(input("Enter Password:"))
+# if (a == 'quit'):
+#      print('Logging in')
+# else :
+#      raise NameError("Password Incorrect")
+#
+#28 - short hand syntax
+# a = 3500
+# b = 32202
+# print("A") if a > b else print("=") if a==b else print("B")
+# c = 9 if a>b else str('fuck you')
+# print(c)
+#
+#29 chaning index 
+# lis = [1,44,66,13,74,83,26,84]
+# for index, lis in enumerate(lis, start=1):
+#     print(lis)
+#     if(index == 5):
+#         print("Super Cool")
+
+'''Book'''
+#30
+# while True:
+#  a = int(input("Type your number:"))
+#  if (a>10):
+#      print("Siraaaaaa, Kaint Paaji")
+#  elif(a==10):
+#      print("theek aa, lodu")
+#  elif(a<5):
+#      print("chal Fuddu salla")
+
+#31
+# x = 10
+# def my_function():
+#     global x
+#     x = 4
+#     y = 5
+#     print(y)
+#     print(x)
+# my_function()
+# print(x)
+
+#32
+# f = open('app.txt','r')
+# i = 0
+# while True :
+#     i = i + 1
+#     line = f.readline()
+#     if not line :
+#         break
+#     m1 = line.split(",")[0]
+#     m2 = line.split(",")[1]
+#     m3 = line.split(",")[2]
+#     print(f"marks of student {i} in maths is : {m1} ")
+#     print(f"marks of student {i} in maths is : {m2} ")
+#     print(f"marks of student {i} in maths is : {m3} ")
+    # print(line)
+#33
+# with open('app.txt', 'r') as f:
+#     print(type(f))
+#     f.seek(10)
+#     data = f.read(5)
+#     print(data)
+
+#34
+# i = str(input("nu1 :"))
+# j = str(input("nu2 :"))
+# k = str(input("nu3 :"))
+# double = lambda x: i*2
+# print(double(i))

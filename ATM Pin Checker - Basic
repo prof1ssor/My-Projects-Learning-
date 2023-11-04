@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+bool testPin(const int [], const int [], int);
+
+int main()
+{
+    const int keylength = 6;
+    int pin1[keylength] = {2, 4, 5, 6, 7, 8};
+    int pin2[keylength] = {2, 4, 5, 6, 7, 9};
+    int pin3[keylength] = {1, 3, 5, 8, 3, 4};
+
+    if(testPin(pin1, pin2, keylength))
+        cout << "Pin 1 and Pin 2 seem to be the same." << endl;
+    else
+        cout << "Pin 1 and Pin 2 are different." << endl;
+    
+    if (testPin(pin1, pin3, keylength))
+        cout << "Pin 1 and Pin 3 seem to be the same." << endl;
+    else
+        cout << "Pin 1 and Pin 3 are different." << endl;
+
+    if (testPin(pin1, pin1, keylength))
+        cout << "Pin 1 and Pin 1 are the same." << endl;
+    else
+        cout << "Pin 1 and Pin 1 are different." << endl;
+
+    return 0;
+}
+
+bool testPin(const int cuspin[], const int database[], int size)
+{
+    for(int index = 0; index < size; index++)
+    {
+        if (cuspin[index] != database[index])
+            return false;
+    }
+    return true;
+}

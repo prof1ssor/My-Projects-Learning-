@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+const int birds = 250;
+
+void california ();
+int main()
+{
+    const int birds = 200;
+    cout << "the numebr of birds are " << birds << endl;
+    california();
+
+    return 0;
+}
+
+void california ()
+{
+    const int birds  = 20000;
+    cout << "there are " << birds << " in california";
+}

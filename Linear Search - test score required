@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+
+int searchlst(const int[], int, int);
+int const SIZE = 5;
+
+int main()
+{
+    int test[SIZE] = {12,23,54,100,22};
+    int result;
+
+    result = searchlst(test, SIZE, 100);   
+    
+    if (result == -1)
+        {
+            cout << "You have earned 100 points on the test";
+        }
+    else
+    {
+        cout << "you have earned 100 points on the Subject ";
+        cout << (result + 1) << endl;
+    }
+    return 0;
+}
+
+int searchlst(const int list[], int numelt, int value)
+{
+    int index = 0;
+    int position = -1;
+    bool found = false;
+    
+    while (index < numelt && !found)
+    {
+        if (list[index] == value)
+        {
+            found = true;
+            position = index;
+        }
+        index++;
+    }
+    return position;
+}

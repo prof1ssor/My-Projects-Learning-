@@ -1,0 +1,53 @@
+#include <iostream>
+using namespace std;
+
+int binarysearch(const int[], int, int);
+const int size = 10;
+
+int main()
+{
+    int idin[size] = {12, 32, 32, 234, 12, 32, 14, 34, 12, 534};
+    int result, empID;
+
+    cout << "Enter an ID number to get where it is stored: ";
+    cin >> empID;
+
+    result = binarysearch(idin, size, empID);
+
+    if (result == -1)
+    {
+        cout << "The ID number does not exist in the array.\n";
+    }
+    else
+    {
+        cout << "The ID is found at element " << result + 1 << endl;
+    }
+
+    return 0;
+}
+
+int binarysearch(const int array[], int size, int value)
+{
+    int first = 0, last = size - 1, middle, position = -1;
+    bool found = false;
+
+    while (!found && first <= last)
+    {
+        middle = (first + last) / 2;
+        if (array[middle] == value)
+        {
+            found = true;
+            position = middle;
+        }
+        else if (array[middle] > value)
+        {
+            last = middle - 1;
+        }
+        else
+        {
+            first = middle + 1;
+        }
+    }
+
+    return position;
+}

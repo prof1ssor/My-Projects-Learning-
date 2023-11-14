@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    float salary, allowance_pre, allowance, detuction, detuction_pre;
+    float NetSalary;
+
+    cout << "Enter your base salary : $";
+    cin >> salary;
+
+    cout << "What percentage of allowance you are expecing : ";
+    cin >> allowance_pre;
+    allowance = allowance_pre / 100;
+
+    cout << "What is the detuction you are expecting : ";
+    cin >> detuction_pre;
+    detuction = detuction_pre / 100;
+
+    NetSalary = salary +salary * allowance - salary * detuction;
+
+    cout << "Your salary is expected to be $" << NetSalary << endl;
+
+    return 0;
+}

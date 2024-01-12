@@ -4,35 +4,30 @@ class happy{
 private:
     int length, breath;
 public:
-    void getLength(int a){
+    int getLength(int a){
         if(a >= 0){
-            length = a;
+            return length = a;
         }else{
-            length = 0;
+            return length = 0;
         }
-    }
-    void setBreath(int b){
+    }int getBreath(int b){
         if(b >= 0){
-            breath = b;
+            return breath = b;
         }else{
-            breath = 0;
+            return breath = 0;
         }
-    }
-    int getLength(){
+    }int getLength(){
         return length;
-    }
-    int getBreath(){
+    }int getBreath(){
         return breath;
-    }
-    int area(){
-        return  length*breath;
+    }int area(){
+        return length * breath;
     }
 };
 
 int main(){
     happy r;
-    r.setBreath(10);
-    r.getLength(20);
+    r.getBreath(10); r.getLength(22);
     std::cout << r.area() << std::endl;
     
     return 0;

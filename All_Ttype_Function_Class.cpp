@@ -4,19 +4,19 @@ class Rectangle{
 private:
     int length,breath;
 public:
-    Rectangle();
-    Rectangle(int a, int b);
-    Rectangle(Rectangle &r);
-    int getLength(){
+    Rectangle(); // Default and Non-Paramaterized Constructors
+    Rectangle(int a, int b); // Paramatrized Constructor
+    Rectangle(Rectangle &r); // Copy Constructor
+    int getLength(){    // Accessors
         return length;}
-    int getBreath(){
+    int getBreath(){    // Accessors
         return breath;}
-    void setLength(int l);
-    void setBreath(int b);
-    int area();
-    int perimeter();
-    bool isSquare();
-    ~Rectangle();
+    void setLength(int l); // Mutators
+    void setBreath(int b); // Mutators
+    int area(); // Fassilitator
+    int perimeter();    // Fassilitator
+    bool isSquare();    // Inspector Or Enquiry
+    ~Rectangle();   // Destructor
 };
 
 int main(){
